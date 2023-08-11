@@ -24,7 +24,7 @@ public class ToUnderstandExplicitWait {
 		// identify box of pin code 
 		driver.findElement(By.id("Check Delivery")).sendKeys("411033");
 		// click on check button
-	//	WebElement checkButton = driver.findElement(By.id("Check"));
+		WebElement checkButton = driver.findElement(By.id("Check"));
 		//explicitWait(driver,30,checkButton).click();
 		// use explicitly wait 
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
