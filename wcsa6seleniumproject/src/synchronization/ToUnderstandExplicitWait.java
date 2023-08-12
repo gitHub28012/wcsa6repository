@@ -15,31 +15,26 @@ public class ToUnderstandExplicitWait {
 	{
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		// apply implicitly wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 
 		driver.get("https://www.shoppersstack.com/");
-
-		// click on any one of the product
-		driver.findElement(By.cssSelector("img[alt='jeans']")).click();
-		// identify box of pin code 
+		
+		// identify any one of the product and click
+		driver.findElement(By.xpath("//img[@alt='jeans']")).click();
+        
+		//identify check delivery box and pass the inputs 
 		driver.findElement(By.id("Check Delivery")).sendKeys("411033");
-		// click on check button
-		WebElement checkButton = driver.findElement(By.id("Check"));
-		//explicitWait(driver,30,checkButton).click();
-		// use explicitly wait 
+		
+		//identify check button and click
+		//driver.findElement(By.id("Check")).click();
+		
+		// apply explicitly wait for check button
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("Check"))).click();
-		//	
 
 	}
 
-//      public static WebElement explicitWait(WebDriver driver,int sec,WebElement ele)
-//      {
-//    	  WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(sec));
-//          WebElement el = wait.until(ExpectedConditions.elementToBeClickable(ele));
-//          return el;
-//      }
-//  
 
 
 }
