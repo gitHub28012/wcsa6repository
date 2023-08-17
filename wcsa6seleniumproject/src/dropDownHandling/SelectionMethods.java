@@ -44,11 +44,25 @@ public class SelectionMethods {
 		//sel.selectByIndex(3); 
 		
 		// select multiple options by using for loop
-        for(int i=0;i<=3;i++)
-        {
-        	Thread.sleep(2000);
-        	sel.selectByIndex(i);
-        }
+//        for(int i=0;i<=3;i++)
+//        {
+//        	Thread.sleep(2000);
+//        	sel.selectByIndex(i);
+//        }
+//		
+		
+//		select multiple option from dropDown By using 
+//		      selectByValue();
+		
+		String [] array=  {"v1","v2","v3","v4","v5","v6","v7","v8","v9"} ;
+		
+		for(int i=0;i<array.length;i++)
+		{
+			
+			Thread.sleep(2000);
+			sel.selectByValue(array[i]);
+		}
+		
 		
 	}
 
