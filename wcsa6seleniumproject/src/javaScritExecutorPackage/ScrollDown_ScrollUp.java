@@ -6,7 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ScrollDown {
+public class ScrollDown_ScrollUp {
 	
 	public static void main(String[] args) throws InterruptedException {
 		 WebDriver driver=new ChromeDriver();
@@ -22,6 +22,12 @@ public class ScrollDown {
 		 
 		 // perform scroll Down...
 		 jse.executeScript("window.scrollBy(0,500)");
+		 Thread.sleep(4000);
+		 
+		 //perform Scroll Up.....
+		 jse.executeScript("window.scrollBy(0,-500)");
+		 
+		 
 		
 	}
 
