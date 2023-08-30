@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MyntraAssignment {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
@@ -49,6 +49,25 @@ public class MyntraAssignment {
 		driver.findElement(By.xpath("//input[@placeholder='Enter pincode']")).sendKeys("411033");
 		//click on check
 		driver.findElement(By.xpath("//input[@class='pincode-check pincode-button']")).click();
+	   //click on add tO Bag 
+		driver.findElement(By.xpath("//div[contains(@class,'pdp-add-to-ba')]")).click();
+		
+	//   click on go to bag
+	//	driver.findElement(By.xpath("//span[text()='GO TO BAG']")).click();)
+		driver.findElement(By.xpath("//span[text()='GO TO BAG']")).click();
+	
+		// handle pop up
+		driver.findElement(By.xpath("//div[contains(@class,'itemComponents-base-sele')]")).click();
+		
+		// first remove button
+		driver.findElement(By.xpath("//button[text()='REMOVE']")).click();
+		
+		//second remove button
+		driver.findElement(By.xpath("//button[@class='inlinebuttonV2-base-actionButton ' and text()='REMOVE']")).click();
+		
+		Thread.sleep(3000);
+		
+		driver.quit();
 	}
 
 }
