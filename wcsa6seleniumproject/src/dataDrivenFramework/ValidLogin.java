@@ -33,7 +33,7 @@ public class ValidLogin {
 		
 		Thread.sleep(2000);
 		
-		// read the valid username from ActiTimeTestData Excel file
+		// read the valid password from ActiTimeTestData Excel file
 		FileInputStream fis1 = new FileInputStream("./data/ActiTimeTestData.xlsx");
 		Workbook wb1 = WorkbookFactory.create(fis1);
 		Sheet sheet1 = wb1.getSheet("validcreds");
