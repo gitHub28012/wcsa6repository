@@ -46,5 +46,10 @@ public class BaseTest extends Flib implements IautoConstant{
 	  //launch the WebApplication
 	   driver.get(url);
 	}
+	
+	public void closeBrowser()
+	{
+		driver.quit();
+	}
 
 }
