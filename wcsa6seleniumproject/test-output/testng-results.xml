@@ -1,77 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[DEMO CLASS : Method1]]>
-    </line>
-    <line>
-      <![CDATA[DEMO CLASS : Method2]]>
-    </line>
-    <line>
-      <![CDATA[REMO CLASS : Method3]]>
-    </line>
-    <line>
-      <![CDATA[REMO CLASS : Method4]]>
-    </line>
-    <line>
-      <![CDATA[SUMO CLASS : Method5]]>
-    </line>
-    <line>
-      <![CDATA[SUMO CLASS : Method6]]>
+      <![CDATA[TestNGClass2 : Method4]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-09-15T15:01:07 IST" name="Suite" finished-at="2023-09-15T15:01:07 IST" duration-ms="89">
+  <suite started-at="2023-09-16T14:39:21 IST" name="Failed suite [Failed suite [Default suite]]" finished-at="2023-09-16T14:39:22 IST" duration-ms="63">
     <groups>
     </groups>
-    <test started-at="2023-09-15T15:01:07 IST" name="Test" finished-at="2023-09-15T15:01:07 IST" duration-ms="89">
-      <class name="testNGPackage.Sumo">
-        <test-method signature="method5()[pri:0, instance:testNGPackage.Sumo@3012646b]" started-at="2023-09-15T15:01:07 IST" name="method5" finished-at="2023-09-15T15:01:07 IST" duration-ms="1" status="PASS">
+    <test started-at="2023-09-16T14:39:21 IST" name="Default test(failed)(failed)" finished-at="2023-09-16T14:39:22 IST" duration-ms="63">
+      <class name="testNGExecution.TestNGClass2">
+        <test-method signature="method4()[pri:0, instance:testNGExecution.TestNGClass2@272113c4]" started-at="2023-09-16T14:39:22 IST" name="method4" finished-at="2023-09-16T14:39:22 IST" duration-ms="11" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[SUMO CLASS : Method5]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- method5 -->
-        <test-method signature="method6()[pri:0, instance:testNGPackage.Sumo@3012646b]" started-at="2023-09-15T15:01:07 IST" name="method6" finished-at="2023-09-15T15:01:07 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[SUMO CLASS : Method6]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- method6 -->
-      </class> <!-- testNGPackage.Sumo -->
-      <class name="testNGPackage.Demo">
-        <test-method signature="method1()[pri:0, instance:testNGPackage.Demo@771a660]" started-at="2023-09-15T15:01:07 IST" name="method1" finished-at="2023-09-15T15:01:07 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[DEMO CLASS : Method1]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- method1 -->
-        <test-method signature="method2()[pri:0, instance:testNGPackage.Demo@771a660]" started-at="2023-09-15T15:01:07 IST" name="method2" finished-at="2023-09-15T15:01:07 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[DEMO CLASS : Method2]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- method2 -->
-      </class> <!-- testNGPackage.Demo -->
-      <class name="testNGPackage.Remo">
-        <test-method signature="method3()[pri:0, instance:testNGPackage.Remo@52719fb6]" started-at="2023-09-15T15:01:07 IST" name="method3" finished-at="2023-09-15T15:01:07 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[REMO CLASS : Method3]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- method3 -->
-        <test-method signature="method4()[pri:0, instance:testNGPackage.Remo@52719fb6]" started-at="2023-09-15T15:01:07 IST" name="method4" finished-at="2023-09-15T15:01:07 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[REMO CLASS : Method4]]>
+              <![CDATA[TestNGClass2 : Method4]]>
             </line>
           </reporter-output>
         </test-method> <!-- method4 -->
-      </class> <!-- testNGPackage.Remo -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testNGExecution.TestNGClass2 -->
+    </test> <!-- Default test(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Default suite]] -->
 </testng-results>
