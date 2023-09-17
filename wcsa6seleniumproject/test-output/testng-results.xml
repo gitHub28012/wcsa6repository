@@ -1,23 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[TestNGClass2 : Method4]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-09-16T14:39:21 IST" name="Failed suite [Failed suite [Default suite]]" finished-at="2023-09-16T14:39:22 IST" duration-ms="63">
+  <suite started-at="2023-09-17T12:17:47 IST" name="Suite" finished-at="2023-09-17T12:17:54 IST" duration-ms="7706">
     <groups>
     </groups>
-    <test started-at="2023-09-16T14:39:21 IST" name="Default test(failed)(failed)" finished-at="2023-09-16T14:39:22 IST" duration-ms="63">
-      <class name="testNGExecution.TestNGClass2">
-        <test-method signature="method4()[pri:0, instance:testNGExecution.TestNGClass2@272113c4]" started-at="2023-09-16T14:39:22 IST" name="method4" finished-at="2023-09-16T14:39:22 IST" duration-ms="11" status="PASS">
+    <test started-at="2023-09-17T12:17:47 IST" name="ChromeTest" finished-at="2023-09-17T12:17:53 IST" duration-ms="6715">
+      <class name="testNGExecution.SelectBrowser">
+        <test-method signature="select_Browser_method(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecution.SelectBrowser@942a29c]" started-at="2023-09-17T12:17:47 IST" name="select_Browser_method" finished-at="2023-09-17T12:17:53 IST" duration-ms="6663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://laptop-knl22f4g/login.do]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[TestNGClass2 : Method4]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- method4 -->
-      </class> <!-- testNGExecution.TestNGClass2 -->
-    </test> <!-- Default test(failed)(failed) -->
-  </suite> <!-- Failed suite [Failed suite [Default suite]] -->
+        </test-method> <!-- select_Browser_method -->
+      </class> <!-- testNGExecution.SelectBrowser -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2023-09-17T12:17:47 IST" name="FirefoxTest" finished-at="2023-09-17T12:17:54 IST" duration-ms="7706">
+      <class name="testNGExecution.SelectBrowser">
+        <test-method signature="select_Browser_method(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecution.SelectBrowser@7ef82753]" started-at="2023-09-17T12:17:47 IST" name="select_Browser_method" finished-at="2023-09-17T12:17:54 IST" duration-ms="7658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://laptop-knl22f4g/login.do]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_Browser_method -->
+      </class> <!-- testNGExecution.SelectBrowser -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
 </testng-results>
