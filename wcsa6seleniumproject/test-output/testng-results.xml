@@ -1,69 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Method1]]>
+    </line>
+    <line>
+      <![CDATA[Method3]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-09-17T12:17:47 IST" name="Suite" finished-at="2023-09-17T12:17:54 IST" duration-ms="7706">
+  <suite started-at="2023-09-18T15:01:42 IST" name="Default suite" finished-at="2023-09-18T15:01:42 IST" duration-ms="68">
     <groups>
     </groups>
-    <test started-at="2023-09-17T12:17:47 IST" name="ChromeTest" finished-at="2023-09-17T12:17:53 IST" duration-ms="6715">
-      <class name="testNGExecution.SelectBrowser">
-        <test-method signature="select_Browser_method(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecution.SelectBrowser@942a29c]" started-at="2023-09-17T12:17:47 IST" name="select_Browser_method" finished-at="2023-09-17T12:17:53 IST" duration-ms="6663" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://laptop-knl22f4g/login.do]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[manager]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-09-18T15:01:42 IST" name="Default test" finished-at="2023-09-18T15:01:42 IST" duration-ms="68">
+      <class name="testNGAnnotations_Flags.Flag2">
+        <test-method signature="method1()[pri:0, instance:testNGAnnotations_Flags.Flag2@7ef82753]" started-at="2023-09-18T15:01:42 IST" name="method1" description="Performs Login " finished-at="2023-09-18T15:01:42 IST" duration-ms="11" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Method1]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- select_Browser_method -->
-      </class> <!-- testNGExecution.SelectBrowser -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2023-09-17T12:17:47 IST" name="FirefoxTest" finished-at="2023-09-17T12:17:54 IST" duration-ms="7706">
-      <class name="testNGExecution.SelectBrowser">
-        <test-method signature="select_Browser_method(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecution.SelectBrowser@7ef82753]" started-at="2023-09-17T12:17:47 IST" name="select_Browser_method" finished-at="2023-09-17T12:17:54 IST" duration-ms="7658" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://laptop-knl22f4g/login.do]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[manager]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- method1 -->
+        <test-method signature="method3()[pri:0, instance:testNGAnnotations_Flags.Flag2@7ef82753]" started-at="2023-09-18T15:01:42 IST" name="method3" description="Performs Log out" finished-at="2023-09-18T15:01:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Method3]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- select_Browser_method -->
-      </class> <!-- testNGExecution.SelectBrowser -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- method3 -->
+      </class> <!-- testNGAnnotations_Flags.Flag2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
