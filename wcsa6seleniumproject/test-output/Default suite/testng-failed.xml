@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGExecution.SelectBrowser">
+      <class name="testNGAnnotations_Flags.Flag7">
         <methods>
-          <include name="select_Browser_method"/>
+          <include name="loginMethod"/>
+          <include name="createUserMethod"/>
         </methods>
-      </class> <!-- testNGExecution.SelectBrowser -->
+      </class> <!-- testNGAnnotations_Flags.Flag7 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
