@@ -17,7 +17,9 @@ public class TasksPage {
 		@FindBy(xpath = "//select[@name='customerId']") private WebElement Customer_DropDown;
 		@FindBy(xpath = "//input[@name='name']") private WebElement Project_Name_TB;
 		@FindBy(name = "createProjectSubmit") private WebElement Create_Project_Button;
-		
+		@FindBy(partialLinkText = "All") private WebElement selectAllCust_ProjectCheckBox;
+		@FindBy(xpath = "//input[@value='Delete Selected']") private WebElement deleteSelectedButton;
+		@FindBy(id="deleteButton") private WebElement deleteButtonPopup; 
 		//initialization
 		public  TasksPage(WebDriver driver)
 		{
@@ -58,8 +60,22 @@ public class TasksPage {
 			return Create_Project_Button;
 		}
 		
+		
+		public WebElement getSelectAllCust_ProjectCheckBox() {
+			return selectAllCust_ProjectCheckBox;
+		}
 
 		
+		public WebElement getDeleteSelectedButton() {
+			return deleteSelectedButton;
+		}
+
+
+		public WebElement getDeleteButtonPopup() {
+			return deleteButtonPopup;
+		}
+
+
 		// operational Methods
 		public void create_New_Customer_Method(String customerName) throws InterruptedException
 		{
@@ -80,4 +96,12 @@ public class TasksPage {
 			Create_Project_Button.click();
 		}
 
+		public void deleteCust_ProjectMethod()
+		{
+			Projects_Customers_SubModule.click();
+			selectAllCust_ProjectCheckBox.click();
+			deleteSelectedButton.click();
+			deleteButtonPopup.click();
+		}
+		
 }

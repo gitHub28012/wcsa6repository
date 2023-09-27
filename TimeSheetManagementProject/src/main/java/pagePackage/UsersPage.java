@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import genericPackage.WorkLib;
+import net.bytebuddy.asm.MemberSubstitution.FieldValue;
+
 public class UsersPage {
 	
 	// it is use to store all WebElement of users page
@@ -21,7 +24,8 @@ public class UsersPage {
 	@FindBy(name = "rightGranted[7]") private WebElement manageBillingTypesCheckBox;
 	@FindBy(name = "rightGranted[10]") private WebElement manageWSCheckBox;
 	@FindBy(xpath = "//input[@value='   Create User   ']") private WebElement createUserButton;
-	
+	@FindBy(xpath = "(//td[@class='listtblcell']/a)[2]") private WebElement usersListLink;
+	@FindBy(xpath = "//input[@value='Delete This User']") private WebElement deleteThisUserButton;
 	
 	public UsersPage(WebDriver driver)
 	{
@@ -85,6 +89,20 @@ public class UsersPage {
 	}
 	
 	
+	public WebElement getUsersListLink() {
+		return usersListLink;
+	}
+
+
+
+
+	public WebElement getDeleteThisUserButton() {
+		return deleteThisUserButton;
+	}
+
+
+
+
 	public void createManagerMethod(String username,String Password,String fn,String ln)
 	{
 		create_new_user_Button.click();
@@ -105,6 +123,14 @@ public class UsersPage {
 		manageBillingTypesCheckBox.click();
 		manageWSCheckBox.click();
 		createUserButton.click();
+	}
+	
+	public void deleteManagerMethod()
+	{
+		usersListLink.click();
+		deleteThisUserButton.click();
+        WorkLib wb = new WorkLib();
+        wb.handleConfirmtionPopup();
 	}
 
 }
