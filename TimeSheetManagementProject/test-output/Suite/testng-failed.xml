@@ -3,6 +3,27 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="testPackage.ActiTimeValidLoginTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="validLoginTestScript"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testPackage.ActiTimeValidLoginTestCase -->
+      <class name="testPackage.ActiTimeDeleteTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="deleteTestScript"/>
+        </methods>
+      </class> <!-- testPackage.ActiTimeDeleteTestCase -->
+      <class name="testPackage.ActiTimeCreateManagers">
+        <methods>
+          <include name="setUp"/>
+          <include name="createNewManagerTestScript"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testPackage.ActiTimeCreateManagers -->
       <class name="testPackage.ActiTimeCreateProjects_Customers">
         <methods>
           <include name="setUp"/>
@@ -10,6 +31,13 @@
           <include name="createValidCustomer_ProjectTestScript"/>
         </methods>
       </class> <!-- testPackage.ActiTimeCreateProjects_Customers -->
+      <class name="testPackage.ActiTimeInvalidLoginTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="invalidLoginTestScript"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testPackage.ActiTimeInvalidLoginTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
